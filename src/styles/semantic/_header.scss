@@ -1,0 +1,9 @@
+.app__header {
+  border-bottom: var(--border);
+}
+
+.header__container {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
