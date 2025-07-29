@@ -1,9 +1,11 @@
 .app__footer {
   border-top: var(--border);
+  background-color: var(--colors-bg-surface);
 }
 
 .footer__container {
   display: flex;
   align-items: center;
   padding: 1rem 0;
+  font-size: .875rem;
 }

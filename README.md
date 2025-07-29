@@ -6,5 +6,5 @@ Landing page for itemschema.com
 
 To run
 ```bash
-   npx parcel ./src/index.html
+npx parcel ./src/index.html
 ```

@@ -1,0 +1,27 @@
+.app__btn-main {
+  display: inline-flex;
+  cursor: pointer;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  background: var(--colors-primary);
+  border: 1px solid var(--colors-primary);
+  border-radius: 2px;
+  outline-color: transparent;
+  gap: .5rem;
+}
+
+.app__btn-lg {
+  font-size: 1.125rem;
+  padding: .625rem .875rem;
+  font-weight: 500;
+}
+
+.app__btn-xlg {
+  font-size: 1.25rem;
+  padding: .875rem 1rem;
+  font-weight: 500;
+}
