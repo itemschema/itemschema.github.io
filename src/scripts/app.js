@@ -1,1 +1,8 @@
-console.log('ItemSchema – APIs for in-game Items');
+import { createIcons, CheckCheck, Clock } from 'lucide';
+
+createIcons({
+    icons: {
+        CheckCheck,
+        Clock
+    }
+});

@@ -3,9 +3,11 @@
   padding: 2rem 0;
   background-color: var(--colors-primary-l800);
 
-  .app-container,
-  .pr-hero__container {
+  .app-container {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -13,7 +15,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem 0;
+  border: dashed 1px var(--colors-primary-l200);
+  width: 100%;
 }
 
 .pr-hero__left {
@@ -29,6 +35,15 @@
   align-items: center;
   justify-content: center;
   flex: 1;
+  margin-right: auto;
+}
+
+.pr-hero__footer {
+  flex: 1 1 100%;
+  padding-left: 3rem;
+
+  display: flex;
+  gap: 1rem;
 }
 
 .pr-hero__header {

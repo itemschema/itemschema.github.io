@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page project of itemschema.com",
   "scripts": {
-    "predeploy": "rm -rf dist && parcel build src/index.html --public-url /itemschema.github.io && cp public/CNAME dist/",
+    "predeploy": "rm -rf dist && parcel build src/index.html --public-url /itemschema.com && cp public/CNAME dist/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -21,6 +21,7 @@
     "@parcel/transformer-sass": "^2.15.4",
     "@parcel/transformer-webmanifest": "^2.15.4",
     "gh-pages": "^6.3.0",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "lucide": "^0.534.0"
   }
 }
