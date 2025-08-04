@@ -3,9 +3,17 @@
   flex-direction: column;
   align-items: center;
   padding: 2px;
-  //background: var(--colors-primary-l100);
+  border: dashed 1px var(--colors-primary-l200);
   position: relative;
   width: 52px;
+
+  &.app__gb--d2 {
+    border: dashed 1px #ca3c1d;
+  }
+
+  &.app__gb--cs {
+    border: dashed 1px #C3943F;
+  }
 
   &:hover {
     cursor: pointer;
@@ -24,7 +32,7 @@
   position: absolute;
   right: -4px;
   bottom: -4px;
-  background-color: var(--colors-pancham);
+  background-color: rgba(56, 56, 56, 0.7);
   border-radius: 2px;
   padding: 2px;
   display: inline-flex;
@@ -48,5 +56,5 @@
   width: 48px;
   height: 48px;
   border-radius: 2px;
-  background-color: var(--colors-primary-l300);
+  //background-color: var(--colors-primary-l300);
 }

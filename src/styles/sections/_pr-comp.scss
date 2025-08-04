@@ -1,0 +1,204 @@
+$break-point: 768px;
+
+.steps-section {
+  @media screen and (min-width: $break-point) {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: $break-point) {
+    width: 140px;
+    float: left;
+  }
+}
+
+.section-header {
+  color: var(--colors-pangoro);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.steps-timeline {
+  @media screen and (max-width: $break-point) {
+    border-left: 4px solid var(--colors-primary);
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: $break-point) {
+    border-top: 4px solid var(--colors-primary);
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#no__solution .steps-timeline {
+  border-color: var(--colors-pearl);
+}
+
+#item_schema__solution .steps-one,
+#item_schema__solution .steps-two,
+#item_schema__solution .steps-three {
+  //outline: 1px dashed rgba(green, $outline-width);
+
+  @media screen and (max-width: $break-point) {
+    margin-left: -25px;
+  }
+
+  @media screen and (min-width: $break-point) {
+    float: left;
+    width: 33%;
+    margin-top: -50px;
+  }
+}
+
+#no__solution .steps-one,
+#no__solution .steps-two,
+#no__solution .steps-two-one,
+#no__solution .steps-two-two,
+#no__solution .steps-three {
+  //outline: 1px dashed rgba(green, $outline-width);
+
+  @media screen and (max-width: $break-point) {
+    margin-left: -25px;
+  }
+
+  @media screen and (min-width: $break-point) {
+    float: left;
+    width: 20%;
+    margin-top: -50px;
+  }
+}
+
+#item_schema__solution .steps-one {
+  @media screen and (max-width: $break-point) {
+    padding-bottom: 15px;
+  }
+}
+
+#item_schema__solution .steps-two {
+  @media screen and (max-width: $break-point) {
+    padding-bottom: 140px;
+  }
+}
+
+#item_schema__solution .steps-one {
+  @media screen and (min-width: $break-point) {
+    margin-left: -16.65%;
+    margin-right: 16.65%;
+  }
+}
+
+#item_schema__solution .steps-two {
+  @media screen and (min-width: $break-point) {
+    margin-left: -24.45%;
+    margin-right: 24.45%;
+  }
+}
+
+#item_schema__solution .steps-three {
+  @media screen and (max-width: $break-point) {
+    margin-bottom: -100%;
+  }
+  @media screen and (min-width: $break-point) {
+    margin-left: 16.65%;
+    margin-right: -16.65%;
+  }
+}
+
+#no__solution .steps-one,
+#no__solution .steps-two,
+#no__solution .steps-two-one,
+#no__solution .steps-two-two {
+  @media screen and (max-width: $break-point) {
+    padding-bottom: 16.8px;
+  }
+}
+
+#no__solution .steps-two-two {
+  @media screen and (max-width: $break-point) {
+    padding-top: 16.8px;
+  }
+}
+
+#no__solution .steps-one {
+  @media screen and (min-width: $break-point) {
+    margin-left: -9.65%;
+  }
+}
+
+#no__solution .steps-two {
+  @media screen and (min-width: $break-point) {
+    margin-left: 4.65%;
+    margin-right: 4.65%;
+  }
+}
+
+#no__solution .steps-two-one {
+  @media screen and (min-width: $break-point) {
+    margin-right: 4.65%;
+  }
+}
+
+#no__solution .steps-three {
+  @media screen and (max-width: $break-point) {
+    margin-bottom: -100%;
+  }
+  @media screen and (min-width: $break-point) {
+    margin-left: 4.65%;
+    margin-right: -18.65%;
+  }
+}
+
+.circle {
+  display: block;
+  margin: 15px auto 10px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid var(--colors-primary);
+  border-radius: 50%;
+  background: #fff;
+
+  @media screen and (max-width: $break-point) {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+#no__solution .circle {
+  border-color: var(--colors-pearl);
+}
+
+.steps-name,
+.steps-description {
+  margin: 0;
+}
+
+.steps-name {
+  @extend .section-header;
+  @media screen and (max-width: $break-point) {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  @media screen and (min-width: $break-point) {
+    text-align: center;
+  }
+}
+
+.steps-description {
+  overflow: hidden;
+  color: #999;
+  font-size: 13px;
+
+  @media screen and (min-width: $break-point) {
+    text-align: center;
+  }
+}
