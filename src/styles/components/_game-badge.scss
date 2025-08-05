@@ -8,22 +8,22 @@
   width: 52px;
 
   &.app__gb--d2 {
-    border: dashed 1px #ca3c1d;
+    border: dashed 1px var(--color-game-d2);
   }
 
   &.app__gb--cs {
-    border: dashed 1px #C3943F;
+    border: dashed 1px var(--color-game-cs);
   }
 
   &:hover {
     cursor: pointer;
 
     &.app__gb--d2 .app__gb-img-cont {
-      background-color: #ca3c1d;
+      background-color: var(--color-game-d2);
     }
 
     &.app__gb--cs .app__gb-img-cont {
-      background-color: #C3943F;
+      background-color: var(--color-game-cs);
     }
   }
 }

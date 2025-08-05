@@ -1,7 +1,8 @@
 $break-point: 768px;
 
 .pr-comp {
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
+  background-color: var(--colors-bg-surface);
 }
 
 .pr-comp__header {

@@ -1,0 +1,29 @@
+.app-radio-tab {
+  input, .app-radio-tab__content {
+    display: none;
+  }
+
+  input[data-app-tab="1"]:checked ~ .app-radio-tab__content[data-app-tab-content="1"],
+  input[data-app-tab="2"]:checked ~ .app-radio-tab__content[data-app-tab-content="2"] {
+    display: block;
+  }
+
+  .app-radio-tab__content {
+    padding: 1rem 0;
+  }
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background .25s linear;
+    padding: 0.5rem 1rem;
+    border-bottom: solid 2px var(--colors-pearl);
+    user-select: none;
+  }
+
+  label:hover, input:checked + label {
+    border-color: var(--colors-primary);
+  }
+}
+

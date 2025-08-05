@@ -1,0 +1,20 @@
+.app-sh-container {
+  padding: .5rem 1rem;
+  border: var(--border);
+  background-color: var(--colors-primary-l800);
+}
+
+.app-sh {
+  color: var(--colors-primary);
+  font-size: .925rem;
+  margin: 0;
+
+  .sh-pr {
+    color: var(--colors-primary-d400);
+  }
+
+  .sh-sec {
+    color: var(--colors-pangoro);
+    font-size: .875rem;
+  }
+}

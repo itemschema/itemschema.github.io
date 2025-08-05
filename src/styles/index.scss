@@ -10,8 +10,12 @@
 
 @use './sections/pr-hero';
 @use './sections/pr-comp';
+@use './sections/pr-game';
 
 @use './components/btn';
 @use './components/game-badge';
+@use './components/game-entity-list';
+@use './components/app-radio-tab';
+@use './components/syntax-highlighter';
 
 @use './utils/color-utils';

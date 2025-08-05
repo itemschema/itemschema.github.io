@@ -1,8 +1,12 @@
-import { createIcons, CheckCheck, Clock } from 'lucide';
+import { createIcons, Blocks, ChevronsLeftRightEllipsis, CheckCheck, Clock, ExternalLink, Layers } from 'lucide';
 
 createIcons({
     icons: {
+        Blocks,
+        ChevronsLeftRightEllipsis,
         CheckCheck,
-        Clock
+        Clock,
+        ExternalLink,
+        Layers
     }
 });

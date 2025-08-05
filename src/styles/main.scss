@@ -20,7 +20,7 @@ body {
   padding: 0;
   display: block;
   color: var(--colors-zekrom);
-  background: white;
+  background-color: var(--colors-bg-surface-second);
   height: 100%;
 }
 
@@ -49,4 +49,21 @@ h2 {
   font-size: 1.75rem;
   line-height: 2rem;
   color: var(--colors-pancham);
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: var(--colors-primary-d300);
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  .lucide {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
 }

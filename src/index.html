@@ -98,7 +98,7 @@
 
                 <p class="comp__steps-name">Parse</p>
 
-                <p class="comp__steps-description">Read data as Entities</p>
+                <p class="comp__steps-description">Resolve data as Entities</p>
               </div>
 
               <div class="steps-two-one">
@@ -148,6 +148,143 @@
               </div>
             </div>
           </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game - Dota 2 -->
+  <section class="pr-game pr-game--d2">
+    <div class="app-container">
+      <header class="pr-game__header">
+        <img src="./images/icons/dota2-logo.svg" alt="Dota 2 logo" width="36" height="36"/>
+
+        <h2>Dota 2 in-game item API</h2>
+      </header>
+
+      <div class="pr-game__container">
+        <div class="pr-game__top">
+          <h3><i data-lucide="blocks"></i> Available resources</h3>
+
+          <div class="app-game__entity-list">
+            <div class="app-game__entity">
+              <span>Item (cosmetic)</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Hero</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Hero Socket</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Event</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Slot</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Rarity</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Quality</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Partner</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Prefab (type)</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Treasure</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Bundle (set)</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Drop list</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Gem</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Style</span>
+            </div>
+
+            <div class="app-game__entity">
+              <span>Tool</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pr-game__middle">
+          <div class="pr-game__middle-l">
+            <h3><i data-lucide="layers"></i> Features</h3>
+
+            <ul class="pr-game__feature-list">
+              <li>Access to 15 languages with a single request</li>
+              <li>Supports filtering and sorting</li>
+              <li>Complex entities - bundles, treasure</li>
+              <li>Designed to minimize the number of requests</li>
+            </ul>
+
+            <div class="pr-game__actions">
+              <button class="app__btn-main app__btn-lg" type="button">API Documentation</button>
+            </div>
+          </div>
+
+          <div class="pr-game__middle-r">
+            <h3><i data-lucide="chevrons-left-right-ellipsis"></i> Integration</h3>
+
+            <div class="app-radio-tab">
+              <input type="radio" name="d2-integration" id="d2-integration__rest" data-app-tab="1" checked="checked" />
+              <label for="d2-integration__rest">REST</label>
+
+              <input type="radio" name="d2-integration" id="d2-integration__php" data-app-tab="2" />
+              <label for="d2-integration__php">PHP</label>
+
+              <article class="app-radio-tab__content" data-app-tab-content="1">
+                <div class="app-sh-container">
+                     <pre class="app-sh">
+<span class="sh-pr">curl</span> <span class="sh-sec">-X</span> <span class="sh-pr">GET</span> 'https://d2.api.itemschema.com/items' <span class="sh-sec">\</span>
+<span class="sh-sec">-H</span> 'X-Api-Key: is_xxxxxxxxx' <span class="sh-sec">\</span>
+<span class="sh-sec">-H</span> 'Content-Type: application/json'</pre>
+                </div>
+              </article>
+
+              <article class="app-radio-tab__content" data-app-tab-content="2">
+                <div class="app-sh-container">
+                     <pre class="app-sh">
+<span class="sh-sec">$itemSchema</span> <span class="sh-pr">=</span> <span class="sh-sec">ItemSchema</span><span class="sh-pr">::client</span><span class="sh-sec">(</span>'is_xxxxxxxxx'<span class="sh-sec">);</span>
+
+<span class="sh-sec">$itemSchema</span><span class="sh-pr">->items->page</span><span class="sh-sec">();</span></pre>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="pr-game__bottom">
+          <h3><i data-lucide="external-link"></i> See in action</h3>
+
+          <div class="pr-game__client-link">
+            <a href="https://dota-showcase.com/" target="_blank">
+              <img src="./images/third-party/dota-showcase_logo.svg" alt="Dota Showcase logo" width="240"/>
+            </a>
+          </div>
         </div>
       </div>
     </div>

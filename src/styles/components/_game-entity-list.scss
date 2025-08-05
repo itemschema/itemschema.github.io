@@ -1,0 +1,21 @@
+.app-game__entity-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.app-game__entity {
+  padding: .325rem .625rem;
+  color: var(--colors-pangoro);
+  font-size: .875rem;
+  line-height: 1rem;
+  border: var(--border);
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--colors-primary-l300);
+    color: white;
+  }
+}
