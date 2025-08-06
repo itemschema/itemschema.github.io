@@ -50,7 +50,7 @@
         </div>
 
         <div class="pr-hero__footer">
-          <div class="app__gb app__gb--d2" title="Dota 2">
+          <a class="app__gb app__gb--d2" title="Dota 2" href="#pr-game--d2">
             <div class="app__gb-img-cont">
               <img src="./images/icons/dota2-logo.svg" alt="Dota 2 logo" width="48" height="48"/>
             </div>
@@ -58,9 +58,9 @@
             <div class="app__gb-status app__gb-status--active">
               <i data-lucide="check-check"></i>
             </div>
-          </div>
+          </a>
 
-          <div class="app__gb app__gb--cs" title="Counter-Strike 2">
+          <a class="app__gb app__gb--cs" title="Counter-Strike 2" href="#pr-game--cs">
             <div class="app__gb-img-cont">
               <img src="./images/icons/cs2-logo.svg" alt="Counter-Strike 2 logo" width="48" height="48"/>
             </div>
@@ -68,7 +68,7 @@
             <div class="app__gb-status app__gb-status--waiting">
               <i data-lucide="clock"></i>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@
   </section>
 
   <!-- Game - Dota 2 -->
-  <section class="pr-game pr-game--d2">
+  <section class="pr-game pr-game--d2" id="pr-game--d2">
     <div class="app-container">
       <header class="pr-game__header">
         <img src="./images/icons/dota2-logo.svg" alt="Dota 2 logo" width="36" height="36"/>
@@ -286,6 +286,77 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game - CS -->
+  <section class="pr-game pr-game--cs" id="pr-game--cs">
+    <div class="app-container">
+      <header class="pr-game__header">
+        <img src="./images/icons/cs2-logo.svg" alt="Counter-Strike 2 logo" width="36" height="36"/>
+
+        <h2>Counter-Strike 2 in-game item API</h2>
+      </header>
+
+      <div class="pr-game__container">
+        <div class="pr-game__top">
+          <div class="pr-game--in-progress">
+            <p class="pr-game--in-progress-title">Q4 2025</p>
+
+            <p class="pr-game--in-progress-suffix">Available in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="pr-features">
+    <div class="app-container">
+      <header class="pr-features__header">
+        <h2>Ready for your business</h2>
+      </header>
+
+      <div class="pr-features__container">
+        <div class="pr-features__item">
+          <div class="pr-features__item-icon"><i data-lucide="image-down"></i></div>
+
+          <h3 class="pr-features__item-title">CDN</h3>
+
+          <p class="pr-features__item-sub-title">
+            Built-in CDN for item images — asset URLs are included in the responses.
+          </p>
+        </div>
+
+        <div class="pr-features__item">
+          <div class="pr-features__item-icon"><i data-lucide="webhook"></i></div>
+
+          <h3 class="pr-features__item-title">Webhooks</h3>
+
+          <p class="pr-features__item-sub-title">
+            Receive real-time notifications directly to your server. Every time a new data is available.
+          </p>
+        </div>
+
+        <div class="pr-features__item">
+          <div class="pr-features__item-icon"><i data-lucide="stretch-horizontal"></i></div>
+
+          <h3 class="pr-features__item-title">Request logging</h3>
+
+          <p class="pr-features__item-sub-title">
+            Track and review all requests and API key usage with comprehensive, detailed logs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="pr-cta">
+    <div class="app-container">
+      <div class="pr-cta-inner">
+        <a class="app__btn-main app__btn-xlg" href="#">Grab free API key</a>
       </div>
     </div>
   </section>

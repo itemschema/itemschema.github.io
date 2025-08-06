@@ -1,0 +1,44 @@
+.pr-features {
+  .app-container {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.pr-features__header {
+  padding: 0 0 1rem;
+}
+
+.pr-features__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pr-features__item {
+  flex: 1;
+  padding: .5rem;
+  border: var(--border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .pr-features__item-icon {
+    color: var(--colors-primary);
+
+    .lucide {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .pr-features__item-title {
+    margin-bottom: 0;
+  }
+
+  .pr-features__item-sub-title {
+    font-size: .925rem;
+    line-height: 1.25rem;
+    color: var(--colors-pangoro);
+  }
+}

@@ -1,14 +1,24 @@
 .pr-game {
   .app-container {
-    padding: 1.5rem 1.5rem;
+    padding: 4rem 1.5rem;
   }
 }
 
 .pr-game--d2 {
-  //background-color: #f8f1f0;
+  background-color: var(--colors-bg-surface-second);
 
   .app-container {
     border: 1px dashed var(--color-game-d2);
+  }
+}
+
+.pr-game--cs {
+  background-color: #f3ebdc;
+
+  .app-container {
+    border-left: 1px dashed var(--color-game-cs);
+    border-right: 1px dashed var(--color-game-cs);
+    border-bottom: 1px dashed var(--color-game-cs);
   }
 }
 
@@ -16,7 +26,7 @@
   display: inline-flex;
   gap: 8px;
   align-items: center;
-  padding: 0 0 1rem;
+  padding: 0 0 4rem;
 }
 
 .pr-game__top {
@@ -57,5 +67,20 @@
     img {
       filter: none;
     }
+  }
+}
+
+.pr-game--in-progress {
+  .pr-game--in-progress-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+    color: var(--colors-primary);
+  }
+
+  .pr-game--in-progress-suffix {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--colors-pecharm);
   }
 }

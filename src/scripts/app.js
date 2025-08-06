@@ -1,4 +1,4 @@
-import { createIcons, Blocks, ChevronsLeftRightEllipsis, CheckCheck, Clock, ExternalLink, Layers } from 'lucide';
+import { createIcons, Blocks, ChevronsLeftRightEllipsis, CheckCheck, Clock, ImageDown, ExternalLink, Layers, StretchHorizontal, Webhook } from 'lucide';
 
 createIcons({
     icons: {
@@ -6,7 +6,10 @@ createIcons({
         ChevronsLeftRightEllipsis,
         CheckCheck,
         Clock,
+        ImageDown,
         ExternalLink,
-        Layers
+        Layers,
+        StretchHorizontal,
+        Webhook
     }
 });
