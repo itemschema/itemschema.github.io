@@ -1,4 +1,5 @@
-.app__btn-main {
+.app__btn-main,
+.app__btn-outline {
   display: inline-flex;
   cursor: pointer;
   user-select: none;
@@ -6,13 +7,28 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
-  color: white;
-  background: var(--colors-primary);
-  border: 1px solid var(--colors-primary);
-  border-radius: 2px;
+  border: 1px solid var(--colors-primary-d300);
+  //border-radius: 2px;
+  white-space: nowrap;
   outline-color: transparent;
   gap: .5rem;
   text-decoration: none;
+}
+
+.app__btn-main {
+  background: var(--colors-primary);
+  color: white;
+}
+
+.app__btn-outline {
+  color: var(--colors-primary);
+}
+
+// Sizes
+.app__btn-md {
+  font-size: 1rem;
+  padding: .35rem .625rem;
+  font-weight: 500;
 }
 
 .app__btn-lg {

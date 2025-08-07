@@ -3,8 +3,29 @@
   background-color: var(--colors-primary-l800);
 }
 
-.pr-cta-inner {
+.pr-cta-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
+}
+
+.pr-cta-left {
+  flex: 1 1 70%;
+
+  h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    max-width: 80ch;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--colors-pangoro);
+  }
+}
+
+.pr-cta-right {
+  flex: 1 1 30%;
+  text-align: center;
 }

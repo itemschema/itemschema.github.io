@@ -6,6 +6,34 @@
 .footer__container {
   display: flex;
   align-items: center;
+  gap: 1rem;
   padding: 1rem 0;
   font-size: .875rem;
+}
+
+.footer_nav,
+.footer_nav-social {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+    gap: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--colors-zekrom);
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+}
+
+.footer__container-right {
+  margin-left: auto;
+  padding: 0 3rem;
+
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }

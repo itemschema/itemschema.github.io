@@ -67,3 +67,13 @@ h3 {
     height: 1.25rem;
   }
 }
+
+::-moz-selection {
+  background: var(--colors-primary-d200);
+  color: white;
+}
+
+::selection {
+  background: var(--colors-primary-d200);
+  color: white;
+}

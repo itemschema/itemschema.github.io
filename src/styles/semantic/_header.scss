@@ -7,4 +7,11 @@
   height: var(--header-height);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header__container-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }

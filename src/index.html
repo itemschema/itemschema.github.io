@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ItemSchema – APIs for in-game Items</title>
+  <title>ItemSchema – In-game item APIs</title>
 
   <link rel="stylesheet" href="./styles/index.scss">
 
@@ -20,10 +20,18 @@
 <header class="app__header">
   <div class="app-container">
     <div class="header__container">
-      <div class="logo-container">
-        <a href="/">
-          <img src="./images/logo/item_schema_logo_full.svg" alt="ItemSchema logo full" width="180"/>
-        </a>
+      <div class="header__container-left">
+        <div class="logo-container">
+          <a href="/">
+            <img src="./images/logo/item_schema_logo_full.svg" alt="ItemSchema logo full" width="180"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="header__container-right">
+        <a class="app__btn-outline app__btn-md" href="#">Log In</a>
+
+        <a class="app__btn-main app__btn-md" href="#">Sign Up</a>
       </div>
     </div>
   </div>
@@ -32,13 +40,16 @@
 <main>
   <!-- Hero -->
   <section class="pr-hero">
+    <div class="pr-hero__bg">
+      <img src="./images/bgs/app_hero.svg" alt=""/>
+    </div>
+
     <div class="app-container">
       <div class="pr-hero__container">
         <div class="pr-hero__left">
-          <!-- In-game item APIs -->
-          <h1 class="pr-hero__header">APIs for in-game Items</h1>
+          <h1 class="pr-hero__header">In-game item APIs</h1>
 
-          <p class="pr-hero__sub-header">Data to power gaming apps.</p>
+          <p class="pr-hero__sub-header">ItemSchema provides the reliable pre-validated data to power apps for games.</p>
 
           <div class="pr-hero__actions">
             <button class="app__btn-main app__btn-xlg" type="button">Get started</button>
@@ -79,6 +90,8 @@
     <div class="app-container">
       <header class="pr-comp__header">
         <h2><span class="app-color-pecharm">Custom solution</span> vs <span class="app-color-primary">ItemSchema</span></h2>
+
+        <p class="pr-comp__header-sub">Data integration cycle for gaming apps</p>
       </header>
 
       <div class="pr-comp__container">
@@ -120,7 +133,7 @@
               <div class="steps-three">
                 <div class="comp__steps-circle"></div>
 
-                <p class="comp__steps-name">Logic</p>
+                <p class="comp__steps-name">Build</p>
 
                 <p class="comp__steps-description">App business logic</p>
               </div>
@@ -136,13 +149,13 @@
 
                 <p class="comp__steps-name">Integrate</p>
 
-                <p class="comp__steps-description">Connecting entities to the app</p>
+                <p class="comp__steps-description">Consume ItemSchema API</p>
               </div>
 
               <div class="steps-two">
                 <div class="comp__steps-circle"></div>
 
-                <p class="comp__steps-name">Logic</p>
+                <p class="comp__steps-name">Build</p>
 
                 <p class="comp__steps-description">App business logic</p>
               </div>
@@ -278,7 +291,7 @@
         </div>
 
         <div class="pr-game__bottom">
-          <h3><i data-lucide="external-link"></i> See in action</h3>
+          <h3><i data-lucide="square-arrow-down-right"></i> See in action</h3>
 
           <div class="pr-game__client-link">
             <a href="https://dota-showcase.com/" target="_blank">
@@ -352,11 +365,21 @@
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- CTA -->
   <section class="pr-cta">
     <div class="app-container">
-      <div class="pr-cta-inner">
-        <a class="app__btn-main app__btn-xlg" href="#">Grab free API key</a>
+      <div class="pr-cta-container">
+        <div class="pr-cta-left">
+          <h2>Ready to power your app?</h2>
+
+          <p>
+            All the features you need to manage your API integration, troubleshoot with detailed logs, and keep data actual – without the friction.
+          </p>
+        </div>
+
+        <div class="pr-cta-right">
+          <a class="app__btn-main app__btn-xlg" href="#">Grab a free API key</a>
+        </div>
       </div>
     </div>
   </section>
@@ -365,7 +388,31 @@
 <footer class="app__footer">
   <div class="app-container">
     <div class="footer__container">
-      <p>2025, ItemSchema</p>
+      <div class="footer__container-left">
+        <p>2025, itemschema</p>
+      </div>
+
+      <div class="footer__container-right">
+        <nav class="footer_nav">
+          <ul>
+            <li>
+              <a href="./privacy-policy.html">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="./privacy-policy.html">Terms of Service</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="footer_nav-social">
+          <ul>
+            <li title="Github organization">
+              <a href="https://github.com/itemschema" target="_blank"><img src="./images/third-party/github.svg" width="20" height="20" alt="Github"/></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </footer>

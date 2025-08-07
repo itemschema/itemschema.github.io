@@ -2,12 +2,25 @@
   height: calc(100vh - var(--header-height));
   padding: 2rem 0;
   background-color: var(--colors-primary-l800);
+  position: relative;
 
   .app-container {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .pr-hero__bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    overflow: hidden;
+    z-index: 1;
   }
 }
 
@@ -18,14 +31,14 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding: 3rem 0;
-  border: dashed 1px var(--colors-primary-l200);
+  //border: dashed 1px var(--colors-primary-l200);
   width: 100%;
 }
 
 .pr-hero__left {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
   flex: 1;
   padding-left: 3rem;
 }
@@ -49,13 +62,13 @@
 .pr-hero__header {
   color: var(--colors-zekrom);
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  line-height: 3.5rem;
 }
 
 .pr-hero__sub-header {
   color: var(--colors-pancham);
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
