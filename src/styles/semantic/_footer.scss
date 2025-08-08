@@ -34,6 +34,12 @@
   }
 }
 
+.footer__container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
 .footer__container-right {
   margin-left: auto;
   padding: 0 3rem;
@@ -41,4 +47,10 @@
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+
+.footer__affiliate-disclaimer {
+  font-size: .75rem;
+  line-height: .75rem;
+  color: var(--colors-pecharm);
 }
