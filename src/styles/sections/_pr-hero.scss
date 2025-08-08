@@ -1,3 +1,6 @@
+@use '../grid_breakpoint' as *;
+@use 'sass:map';
+
 .pr-hero {
   height: calc(100vh - var(--header-height));
   padding: 2rem 0;
@@ -29,9 +32,8 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   padding: 3rem 0;
-  //border: dashed 1px var(--colors-primary-l200);
   width: 100%;
 }
 
@@ -49,6 +51,13 @@
   justify-content: center;
   flex: 1;
   margin-right: auto;
+
+  @media screen and (max-width: map.get($grid-breakpoints, 'lg')) {
+    img {
+      width: 320px;
+      height: 320px;
+    }
+  }
 }
 
 .pr-hero__footer {
@@ -71,4 +80,21 @@
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'md')) {
+  .pr-hero__left {
+    gap: 2.5rem;
+  }
+
+  .pr-hero__right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'sm')) {
+  .pr-hero__left,
+  .pr-hero__footer {
+    padding-left: 0;
+  }
 }

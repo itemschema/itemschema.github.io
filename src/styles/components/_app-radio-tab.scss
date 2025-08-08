@@ -9,7 +9,8 @@
   }
 
   .app-radio-tab__content {
-    padding: 1rem 0;
+    padding: 1rem 0 .5rem;
+    overflow: auto;
   }
 
   label {

@@ -1,3 +1,7 @@
+@use '../grid_breakpoint' as *;
+@use 'sass:map';
+
+
 .pr-game {
   .app-container {
     padding: 4rem 1.5rem;
@@ -29,8 +33,28 @@
   padding: 0 0 4rem;
 }
 
-.pr-game__top {
-  //border-bottom: 1px dashed var(--color-game-d2);
+@media screen and (max-width: map.get($grid-breakpoints, 'md')) {
+  .pr-game {
+    .app-container {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  .pr-game__header {
+    padding: 0 0 2rem;
+  }
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'sm')) {
+  .pr-game__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+      text-align: left;
+    }
+  }
 }
 
 .pr-game__middle {
@@ -43,6 +67,19 @@
 .pr-game__middle-r {
   flex: 1;
   padding: 2rem 0;
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'lg')) {
+  .pr-game__middle {
+    flex-direction: column;
+    align-items: initial;
+    margin-top: 1rem;
+  }
+
+  .pr-game__middle-l,
+  .pr-game__middle-r {
+    padding: 1rem 0;
+  }
 }
 
 .pr-game__feature-list {

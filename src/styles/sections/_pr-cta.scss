@@ -1,3 +1,6 @@
+@use '../grid_breakpoint' as *;
+@use 'sass:map';
+
 .pr-cta {
   padding: 3rem 0;
   background-color: var(--colors-primary-l800);
@@ -7,6 +10,10 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
+    flex-direction: column;
+  }
 }
 
 .pr-cta-left {

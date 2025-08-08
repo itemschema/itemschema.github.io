@@ -1,4 +1,5 @@
-$break-point: 768px;
+@use '../grid_breakpoint' as *;
+@use 'sass:map';
 
 .pr-comp {
   padding: 2rem 0 1rem;
@@ -9,6 +10,16 @@ $break-point: 768px;
   padding: 0 2rem 1.5rem;
 }
 
+@media screen and (max-width: map.get($grid-breakpoints, 'md')) {
+  .pr-comp {
+    padding: 2rem 0;
+  }
+
+  .pr-comp__header {
+    padding: 0 0 1.5rem;
+  }
+}
+
 .pr-comp__header-sub {
   text-align: center;
   margin-top: .5rem;
@@ -17,18 +28,22 @@ $break-point: 768px;
   color: var(--colors-pangoro);
 }
 
-@media screen and (max-width: $break-point) {
+.pr-comp__container {
+  overflow: hidden;
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'md')) {
   .pr-comp__container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1rem;
   }
 }
 
 // see - https://codepen.io/stollke/pen/ZGMoeL
 .comp__steps-section {
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     max-width: 60rem;
     margin: 50px auto;
     padding: 0 20px;
@@ -42,12 +57,12 @@ $break-point: 768px;
 }
 
 .comp__steps-timeline {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     border-left: 4px solid var(--colors-primary);
     margin-left: 15px;
   }
 
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     border-top: 4px solid var(--colors-primary);
     padding-top: 20px;
     margin-top: 40px;
@@ -68,11 +83,11 @@ $break-point: 768px;
 
 #item_schema__solution .steps-one,
 #item_schema__solution .steps-two {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     margin-left: -25px;
   }
 
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     float: left;
     width: 33%;
     margin-top: -50px;
@@ -84,11 +99,11 @@ $break-point: 768px;
 #no__solution .steps-two-one,
 #no__solution .steps-two-two,
 #no__solution .steps-three {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     margin-left: -25px;
   }
 
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     float: left;
     width: 20%;
     margin-top: -50px;
@@ -96,30 +111,30 @@ $break-point: 768px;
 }
 
 #item_schema__solution .steps-one {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     padding-bottom: 15px;
   }
 }
 
 #item_schema__solution .steps-two {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     padding-bottom: 140px;
   }
 }
 
 #item_schema__solution .steps-one {
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     margin-left: -16.65%;
     margin-right: 16.65%;
   }
 }
 
 #item_schema__solution .steps-two {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     margin-bottom: -100%;
   }
 
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     margin-left: 50%;
     margin-right: -16.65%;
   }
@@ -129,41 +144,41 @@ $break-point: 768px;
 #no__solution .steps-two,
 #no__solution .steps-two-one,
 #no__solution .steps-two-two {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     padding-bottom: 16.8px;
   }
 }
 
 #no__solution .steps-two-two {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     padding-top: 16.8px;
   }
 }
 
 #no__solution .steps-one {
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     margin-left: -9.65%;
   }
 }
 
 #no__solution .steps-two {
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     margin-left: 4.65%;
     margin-right: 4.65%;
   }
 }
 
 #no__solution .steps-two-one {
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     margin-right: 4.65%;
   }
 }
 
 #no__solution .steps-three {
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     margin-bottom: -100%;
   }
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     margin-left: 4.65%;
     margin-right: -18.65%;
   }
@@ -178,7 +193,7 @@ $break-point: 768px;
   border-radius: 50%;
   background: #fff;
 
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     float: left;
     margin-right: 10px;
     margin-left: 10px;
@@ -196,12 +211,12 @@ $break-point: 768px;
 
 .comp__steps-name {
   @extend .section-header;
-  @media screen and (max-width: $break-point) {
+  @media screen and (max-width: map.get($grid-breakpoints, 'md')) {
     display: inline-block;
     margin-top: 10px;
   }
 
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     text-align: center;
   }
 }
@@ -212,7 +227,7 @@ $break-point: 768px;
   font-size: .85rem;
   margin-top: 4px;
 
-  @media screen and (min-width: $break-point) {
+  @media screen and (min-width: map.get($grid-breakpoints, 'md')) {
     text-align: center;
   }
 }

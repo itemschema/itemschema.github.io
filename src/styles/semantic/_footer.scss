@@ -1,3 +1,6 @@
+@use '../grid_breakpoint' as *;
+@use 'sass:map';
+
 .app__footer {
   border-top: var(--border);
   background-color: var(--colors-bg-surface);
@@ -26,6 +29,7 @@
     color: var(--colors-zekrom);
     font-size: .875rem;
     line-height: 1rem;
+    white-space: nowrap;
   }
 
   .lucide {
@@ -53,4 +57,25 @@
   font-size: .75rem;
   line-height: .75rem;
   color: var(--colors-pecharm);
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'md')) {
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: initial;
+  }
+
+  .footer__container-right {
+    padding: 0;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: map.get($grid-breakpoints, 'sm')) {
+  .footer__container-right {
+    flex-direction: column;
+    align-items: initial;
+    margin-left: 0;
+    text-align: center;
+  }
 }
