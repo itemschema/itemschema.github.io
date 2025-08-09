@@ -6,6 +6,9 @@
 
   <title>ItemSchema – In-game item APIs</title>
 
+  <meta name="description" content="ItemSchema is in-game item API provider for developers and publishers. Powered with Image CDN, Webhooks, detailed logs, and more..">
+  <meta name="keywords" content="skin api, game api, dota 2 api, cs go api">
+
   <link rel="stylesheet" href="./styles/index.scss">
 
   <link rel="icon" type="image/x-icon" href="./favicon.ico" />
@@ -14,6 +17,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
+
+  <meta property="og:title" content="ItemSchema – In-game item APIs"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="ItemSchema is in-game item API provider for developers and publishers. Powered with Image CDN, Webhooks, detailed logs, and more.."/>
+  <meta property="og:site_name" content="ItemSchema"/>
+  <meta property="og:url" content="https://itemschema.com/"/>
+  <meta property="og:image" content="./images/open-graph/itemschema_com.jpg"/>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ItemSchema – In-game item APIs">
+  <meta name="twitter:image" content="./images/open-graph/itemschema_com.jpg">
+  <meta name="twitter:description" content="ItemSchema is in-game item API provider for developers and publishers. Powered with Image CDN, Webhooks, detailed logs, and more..">
 </head>
 
 <body>
@@ -41,7 +56,19 @@
   <!-- Hero -->
   <section class="pr-hero">
     <div class="pr-hero__bg">
-      <img src="./images/bgs/app_hero.svg" alt=""/>
+      <picture>
+        <!-- Desktop -->
+        <source srcset="./images/bgs/app_hero.svg" media="(min-width: 1024px)">
+
+        <!-- Tablet -->
+        <source srcset="./images/bgs/app_hero_lg.svg" media="(min-width: 640px) and (max-width: 1024px)">
+
+        <!-- Mobile -->
+        <source srcset="./images/bgs/app_hero_sm.svg" media="(max-width: 640px)">
+
+        <!-- Fallback image -->
+        <img src="./images/bgs/app_hero.svg" alt="">
+      </picture>
     </div>
 
     <div class="app-container">
@@ -393,15 +420,11 @@
 
         <div class="footer__affiliate-disclaimer">
           <p>
-            <small>
               Dota 2, Counter-Strike 2, and their respective logos are trademarks of Valve Corporation.
-            </small>
           </p>
 
           <p>
-            <small>
               ItemSchema is not affiliated with Valve Corporation.
-            </small>
           </p>
         </div>
       </div>
