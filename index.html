@@ -1,11 +1,19 @@
-<!DOCTYPE html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><title>ItemSchema – APIs for in-game Items</title><link rel=stylesheet href=/itemschema.github.io/itemschema.github.io.aeed89e7.css><link rel=icon type=image/x-icon href=/itemschema.github.io/favicon.6709e159.ico><link rel=apple-touch-icon sizes=180x180 href=/itemschema.github.io/apple-touch-icon.c3c08029.png><link rel=icon type=image/png sizes=32x32 href=/itemschema.github.io/favicon-32x32.0bb7afb9.png><link rel=icon type=image/png sizes=16x16 href=/itemschema.github.io/favicon-16x16.a31fccca.png><link rel=manifest href=/itemschema.github.io/site.webmanifest><body>
+<!DOCTYPE html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1"><title>ItemSchema – In-game item APIs</title><meta name=description content="ItemSchema is in-game item API provider for developers and publishers. Powered with Image CDN, Webhooks, detailed logs, and more.."><meta name=keywords content="skin api, game api, dota 2 api, cs go api"><link rel=stylesheet href=/itemschema.github.io/itemschema.github.io.48bd2f80.css><link rel=icon type=image/x-icon href=/itemschema.github.io/favicon.6709e159.ico><link rel=apple-touch-icon sizes=180x180 href=/itemschema.github.io/apple-touch-icon.c3c08029.png><link rel=icon type=image/png sizes=32x32 href=/itemschema.github.io/favicon-32x32.0bb7afb9.png><link rel=icon type=image/png sizes=16x16 href=/itemschema.github.io/favicon-16x16.a31fccca.png><link rel=manifest href=/itemschema.github.io/site.webmanifest><meta property=og:title content="ItemSchema – In-game item APIs"><meta property=og:type content=website><meta property=og:description content="ItemSchema is in-game item API provider for developers and publishers. Powered with Image CDN, Webhooks, detailed logs, and more.."><meta property=og:site_name content=ItemSchema><meta property=og:url content=https://itemschema.com/><meta property=og:image content=/itemschema.github.io/images/open-graph/itemschema_com.jpg><meta name=twitter:card content=summary_large_image><meta name=twitter:title content="ItemSchema – In-game item APIs"><meta name=twitter:image content=/itemschema.github.io/images/open-graph/itemschema_com.jpg><meta name=twitter:description content="ItemSchema is in-game item API provider for developers and publishers. Powered with Image CDN, Webhooks, detailed logs, and more.."><body>
 <header class=app__header>
   <div class=app-container>
     <div class=header__container>
-      <div class=logo-container>
-        <a href=/>
-          <img src=/itemschema.github.io/item_schema_logo_full.6da38323.svg alt="ItemSchema logo full" width=180>
-        </a>
+      <div class=header__container-left>
+        <div class=logo-container>
+          <a href=/>
+            <img src=/itemschema.github.io/item_schema_logo_full.6da38323.svg alt="ItemSchema logo full" width=173 height=32>
+          </a>
+        </div>
+      </div>
+
+      <div class=header__container-right>
+        <a class="app__btn-md app__btn-outline" href=#>Log In</a>
+
+        <a class="app__btn-main app__btn-md" href=#>Sign Up</a>
       </div>
     </div>
   </div>
@@ -14,13 +22,28 @@
 <main>
   
   <section class=pr-hero>
+    <div class=pr-hero__bg>
+      <picture>
+        
+        <source srcset=/itemschema.github.io/app_hero.759d005b.svg media="(min-width: 1024px)">
+
+        
+        <source srcset=/itemschema.github.io/app_hero_lg.69bf45e3.svg media="(min-width: 640px) and (max-width: 1024px)">
+
+        
+        <source srcset=/itemschema.github.io/app_hero_sm.768af2fa.svg media="(max-width: 640px)">
+
+        
+        <img src=/itemschema.github.io/app_hero.759d005b.svg alt>
+      </picture>
+    </div>
+
     <div class=app-container>
       <div class=pr-hero__container>
         <div class=pr-hero__left>
-          
-          <h1 class=pr-hero__header>APIs for in-game Items</h1>
+          <h1 class=pr-hero__header>In-game item APIs</h1>
 
-          <p class=pr-hero__sub-header>Data to power gaming apps.</p>
+          <p class=pr-hero__sub-header>ItemSchema provides the reliable pre-validated data to power apps for games.</p>
 
           <div class=pr-hero__actions>
             <button class="app__btn-main app__btn-xlg" type=button>Get started</button>
@@ -28,11 +51,11 @@
         </div>
 
         <div class=pr-hero__right>
-          <img src=/itemschema.github.io/item_schema_logo.1030e6c3.svg alt="ItemSchema logo" width=360>
+          <img src=/itemschema.github.io/item_schema_logo.1030e6c3.svg alt="ItemSchema logo" width=360 height=360>
         </div>
 
         <div class=pr-hero__footer>
-          <a class="app__gb app__gb--d2" title="Dota 2" href=#pr-game--d2>
+          <a class="app__gb app__gb--d2" title="Dota 2" href=#dota-2-api>
             <div class=app__gb-img-cont>
               <img src=/itemschema.github.io/dota2-logo.ffcee1d6.svg alt="Dota 2 logo" width=48 height=48>
             </div>
@@ -42,7 +65,7 @@
             </div>
           </a>
 
-          <a class="app__gb app__gb--cs" title="Counter-Strike 2" href=#pr-game--cs>
+          <a class="app__gb app__gb--cs" title="Counter-Strike 2" href=#counter-strike-2-api>
             <div class=app__gb-img-cont>
               <img src=/itemschema.github.io/cs2-logo.b1c573bc.svg alt="Counter-Strike 2 logo" width=48 height=48>
             </div>
@@ -61,6 +84,8 @@
     <div class=app-container>
       <header class=pr-comp__header>
         <h2><span class=app-color-pecharm>Custom solution</span> vs <span class=app-color-primary>ItemSchema</span></h2>
+
+        <p class=pr-comp__header-sub>Data integration cycle for gaming apps</p>
       </header>
 
       <div class=pr-comp__container>
@@ -102,7 +127,7 @@
               <div class=steps-three>
                 <div class=comp__steps-circle></div>
 
-                <p class=comp__steps-name>Logic</p>
+                <p class=comp__steps-name>Build</p>
 
                 <p class=comp__steps-description>App business logic</p>
               </div>
@@ -118,13 +143,13 @@
 
                 <p class=comp__steps-name>Integrate</p>
 
-                <p class=comp__steps-description>Connecting entities to the app</p>
+                <p class=comp__steps-description>Consume ItemSchema API</p>
               </div>
 
               <div class=steps-two>
                 <div class=comp__steps-circle></div>
 
-                <p class=comp__steps-name>Logic</p>
+                <p class=comp__steps-name>Build</p>
 
                 <p class=comp__steps-description>App business logic</p>
               </div>
@@ -136,7 +161,7 @@
   </section>
 
   
-  <section class="pr-game pr-game--d2" id=pr-game--d2>
+  <section class="pr-game pr-game--d2" id=dota-2-api>
     <div class=app-container>
       <header class=pr-game__header>
         <img src=/itemschema.github.io/dota2-logo.ffcee1d6.svg alt="Dota 2 logo" width=36 height=36>
@@ -258,7 +283,7 @@
         </div>
 
         <div class=pr-game__bottom>
-          <h3><i data-lucide=external-link></i> See in action</h3>
+          <h3><i data-lucide=square-arrow-down-right></i> See in action</h3>
 
           <div class=pr-game__client-link>
             <a href=https://dota-showcase.com/ target=_blank>
@@ -271,7 +296,7 @@
   </section>
 
   
-  <section class="pr-game pr-game--cs" id=pr-game--cs>
+  <section class="pr-game pr-game--cs" id=counter-strike-2-api>
     <div class=app-container>
       <header class=pr-game__header>
         <img src=/itemschema.github.io/cs2-logo.b1c573bc.svg alt="Counter-Strike 2 logo" width=36 height=36>
@@ -335,8 +360,18 @@
   
   <section class=pr-cta>
     <div class=app-container>
-      <div class=pr-cta-inner>
-        <a class="app__btn-main app__btn-xlg" href=#>Grab free API key</a>
+      <div class=pr-cta-container>
+        <div class=pr-cta-left>
+          <h2>Ready to power your app?</h2>
+
+          <p>
+            All the features you need to manage your API integration, troubleshoot with detailed logs, and keep data actual – without the friction.
+          </p>
+        </div>
+
+        <div class=pr-cta-right>
+          <a class="app__btn-main app__btn-xlg" href=#>Grab a free API key</a>
+        </div>
       </div>
     </div>
   </section>
@@ -345,11 +380,49 @@
 <footer class=app__footer>
   <div class=app-container>
     <div class=footer__container>
-      <p>2025, ItemSchema</p>
+      <div class=footer__container-left>
+        <p>2025, itemschema</p>
+
+        <div class=footer__affiliate-disclaimer>
+          <p>
+              Dota 2, Counter-Strike 2, and their respective logos are trademarks of Valve Corporation.
+          </p>
+
+          <p>
+              ItemSchema is not affiliated with Valve Corporation.
+          </p>
+        </div>
+      </div>
+
+      <div class=footer__container-right>
+        <nav class=footer_nav>
+          <ul>
+            <li>
+              <a href=/itemschema.github.io/privacy-policy.html>Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href=/itemschema.github.io/terms-of-service.html>Terms of Service</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class=footer_nav-social>
+          <ul>
+            <li title="Contact support">
+              <a href=mailto:support@itemschema.com><i data-lucide=mail></i></a>
+            </li>
+
+            <li title="Github organization">
+              <a href=https://github.com/itemschema target=_blank><img src=/itemschema.github.io/github.b8f0075d.svg width=20 height=20 alt=Github></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
 </footer>
 
-<script type=module src=/itemschema.github.io/itemschema.github.io.e21d7b02.js></script>
+<script type=module src=/itemschema.github.io/itemschema.github.io.775925c4.js></script>
 
 
