@@ -25,8 +25,12 @@
     overflow: hidden;
     z-index: 1;
 
+    @media screen and (max-width: map.get($grid-breakpoints, 'lg')) {
+      opacity: .2;
+    }
+
     @media screen and (max-width: map.get($grid-breakpoints, 'sm')) {
-      opacity: .3;
+      opacity: .4;
     }
   }
 }

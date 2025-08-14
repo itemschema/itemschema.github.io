@@ -18,10 +18,19 @@
 .app__btn-main {
   background: var(--colors-primary);
   color: white;
+
+  &:hover {
+    background: var(--colors-primary-l100);
+  }
 }
 
 .app__btn-outline {
   color: var(--colors-primary);
+  border: none;
+
+  &:hover {
+    color: var(--colors-primary-l100);
+  }
 }
 
 // Sizes
